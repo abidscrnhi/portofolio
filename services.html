@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="light">
+<head>
+<!-- ===== HEAD: pengaturan dasar halaman ===== -->
+<meta charset="UTF-8">
+<!-- Viewport: Biar Bootstrap responsive di HP -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABIDD - Services</title>
+
+<!-- Bootstrap 5.3.3 CSS (CDN) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome: kumpulan ikon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- CSS tambahan (hanya yang tidak ada di Bootstrap) -->
+<link rel="stylesheet" href="style.css">
+<!-- Ikon di tab browser -->
+<link rel="icon" href="img/logo.png">
+</head>
+<body>
+
+<!-- ===== NAVBAR (menu atas) =====
+     Komponen Bootstrap: navbar. ID "menuNav" harus sama dengan data-bs-target pada tombol burger. -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
+  <div class="container">
+    <!-- Logo: klik untuk kembali ke Home -->
+    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="ABIDD Logo" class="logo-img"></a>
+
+    <!-- Tombol burger (muncul di HP) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Buka menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Daftar menu. Class "active" menandai halaman yang sedang dibuka -->
+    <div class="collapse navbar-collapse" id="menuNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link active" href="services.html">SERVICES</a></li>
+        <li class="nav-item"><a class="nav-link" href="project.html">PROJECTS</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== JUDUL HALAMAN ===== -->
+<section class="bg-light border-bottom py-5 mt-5">
+  <div class="container text-center py-4">
+    <h1 class="fw-bold">My <span class="text-success">Services</span></h1>
+    <p class="text-muted mb-0">Layanan yang saya tawarkan</p>
+  </div>
+</section>
+
+<!-- ===== DAFTAR LAYANAN: 3 kartu (HP: 1 kolom, layar sedang ke atas: 3 kolom) ===== -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Layanan 1: Web Development -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body p-4">
+            <!-- Lingkaran ikon -->
+            <div class="icon-circle rounded-circle border border-success text-success bg-light mx-auto d-flex align-items-center justify-content-center"><i class="fa-solid fa-code"></i></div>
+            <h6 class="card-title mt-3">Web Development</h6>
+            <p class="card-text text-muted small">Bikin website responsive modern.</p>
+            <ul class="list-unstyled text-muted small mb-0">
+              <li>Website profil &amp; portofolio</li>
+              <li>Website sekolah atau desa</li>
+              <li>Tampilan nyaman di HP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Layanan 2: UI/UX Design -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body p-4">
+            <div class="icon-circle rounded-circle border border-success text-success bg-light mx-auto d-flex align-items-center justify-content-center"><i class="fa-solid fa-pen-nib"></i></div>
+            <h6 class="card-title mt-3">UI/UX Design</h6>
+            <p class="card-text text-muted small">Desain clean &amp; user friendly.</p>
+            <ul class="list-unstyled text-muted small mb-0">
+              <li>Rancangan tampilan aplikasi</li>
+              <li>Alur pengguna yang jelas</li>
+              <li>Logo &amp; poster sederhana</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Layanan 3: Networking -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body p-4">
+            <div class="icon-circle rounded-circle border border-success text-success bg-light mx-auto d-flex align-items-center justify-content-center"><i class="fa-solid fa-network-wired"></i></div>
+            <h6 class="card-title mt-3">Networking</h6>
+            <p class="card-text text-muted small">Setup Mikrotik &amp; jaringan.</p>
+            <ul class="list-unstyled text-muted small mb-0">
+              <li>Konfigurasi router Mikrotik</li>
+              <li>Pembagian bandwidth</li>
+              <li>Jaringan untuk UMKM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="border-top py-3 text-center text-muted small">© 2026 - Zainal Abidin Basri</footer>
+
+<!-- ===== SCRIPT =====
+     Bootstrap JS: wajib supaya menu burger bisa dibuka -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- JavaScript tambahan (efek ketik, tombol WA & email) -->
+<script src="script.js"></script>
+</body>
+</html>

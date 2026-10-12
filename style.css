@@ -1,0 +1,60 @@
+/* ==========================================================
+   style.css - HANYA tambahan kecil di luar Bootstrap 5.
+   ========================================================== */
+
+/* ----- 1. BODY: font & warna dasar (tema terang) ----- */
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+  background: #fff;
+  color: #212529;
+}
+
+/* ----- 2. LOGO NAVBAR ----- */
+.logo-img {
+  height: 42px;
+  width: auto;
+}
+
+/* ----- 3. MENU AKTIF: penanda halaman yang sedang dibuka ----- */
+.navbar .nav-link.active {
+  color: #198754;
+  font-weight: 600;
+  border-bottom: 2px solid #198754;
+}
+
+/* ----- 4. FOTO HERO (halaman Home) ----- */
+.hero-photo {
+  width: 360px;
+  height: 360px;
+  object-fit: cover; /* foto dipotong rapi, tidak gepeng */
+}
+
+/* ----- 5. FOTO HALAMAN ABOUT ----- */
+.about-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ----- 6. GAMBAR KARTU PROJECT ----- */
+.project-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.project-img-contain {
+  object-fit: contain;
+}
+
+/* ----- 7. LINGKARAN IKON (halaman Services) ----- */
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  font-size: 1.5rem;
+}
+
+/* ----- 8. RESPONSIVE HP: ukuran foto dikecilkan ----- */
+@media (max-width: 576px) {
+  .hero-photo  { width: 250px; height: 250px; }
+  .about-photo { width: 180px; height: 180px; }
+}
